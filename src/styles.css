@@ -195,7 +195,14 @@ video {
 }
 
 .qr-frame {
-  @apply rounded-[30px] border border-latte/30 bg-crema p-5 shadow-glow;
+  @apply rounded-[30px] border border-latte/30 bg-white p-4 shadow-glow;
+}
+
+.qr-image {
+  display: block;
+  width: min(70vw, 18rem);
+  height: auto;
+  border-radius: 1rem;
 }
 
 .insta-btn {

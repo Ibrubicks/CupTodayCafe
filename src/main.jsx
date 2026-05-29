@@ -2,7 +2,6 @@ import React, { useMemo, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Clock, Coffee, Instagram, MapPin, Menu, QrCode, Star, Utensils } from 'lucide-react';
-import { QRCodeSVG } from 'qrcode.react';
 import './styles.css';
 
 const menuImages = {
@@ -593,7 +592,7 @@ function QRMenu() {
           </a>
         </div>
         <div className="qr-frame mx-auto">
-          <QRCodeSVG value={`${window.location.origin}${window.location.pathname}#menu`} size={210} bgColor="#f5dfbd" fgColor="#0d0907" level="H" includeMargin />
+          <img className="qr-image" src="/cup-today-cafe-qr.png" alt="Cup Today Cafe official digital menu QR code" loading="lazy" />
           <p className="mt-4 text-center text-xs font-bold uppercase tracking-[0.26em] text-latte">Cup Today Cafe</p>
         </div>
       </motion.div>
